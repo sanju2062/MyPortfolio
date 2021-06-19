@@ -1,18 +1,20 @@
-*{
+:root{
+    font-size: 15px;
+}    
+*{  
     margin: 0;
     padding: 0;
-}
-html{
-    font-size: 15px;
+    box-sizing: border-box;
 }
 #nav-bar{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: auto;
 }
 .max-width{
-    width:50rem;
+    max-width:50rem;
 }
 nav div{
 
@@ -23,9 +25,10 @@ nav div{
 }
 .nav-right{
     display: flex;
-    flex-direction: row;
-    /* justify-content: flex-end; */
-    float: right;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    /* float: right; */
 }
 .nav-left-elements{
     list-style: none;
@@ -44,25 +47,43 @@ nav a:hover{
 }
 hr{
     background-color: #eeeeff;
-    width: 60rem;
+    max-width: 60rem;
     margin: auto;
 }
 .home-content{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     /* height: 25rem; */
     /* background-color: red; */
     margin: 2rem auto;
 }
 .home-text{    
     font-size: 2.5rem;
+    /* margin: auto auto; */
     /* max-width: 20rem; */
 }
 .home-content div img{
     width: 12rem;
     height: 18rem;
+    /* margin: auto 1.5rem; */
+    padding: 0rem auto;
+}
+.home-sub-content{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.social-links{
+    display: flex;
+    /* flex-direction: row; */
+    /* margin: auto; */
+    /* justify-content: flex-start; */
+    align-items: center;
 }
 .social-links li{
     list-style: none;
@@ -80,22 +101,111 @@ hr{
     /* margin: 0.5rem 0; */
 }
 .social-links li a:hover{
-    background-color: rgba(105, 126, 70, 0.829);
-}
-.home-sub-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-}
-.social-links{
-    display: flex;
-    flex-direction: row;
-    /* margin: auto; */
-    justify-content: flex-start;
-    align-items: center;
+    background-color: rgba(250, 184, 3, 0.356);
 }
 #hi-gif{
     width: 8rem;
     height: 10rem;
+    /* background-color: red; */
+}
+.labels{
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(189, 22, 240, 0.815);
+    margin: auto auto;
+}
+.sections{
+    margin: 3rem auto;
+    /* height: 90vh; */
+    align-items: center;
+}
+#about-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:0 auto;
+    height: 90vh;
+}
+#about-text{
+    max-width: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    height: 80vh;
+}
+.skills-content-label{
+    margin: 4rem 0 2rem 0;
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: violet;
+}
+.items{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    max-width: 70rem;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+.contact-form input,textarea{
+    margin: 0 auto 1.5rem auto;
+    border-radius: 0.3rem;
+    width: 70%;
+    border:solid black 0.1rem;
+}
+#submit{
+    border-radius: 0.3rem;
+    max-width: 20%;
+    color: rgba(0, 37, 245, 0.397);
+    font-weight: bold;
+    transition-duration: 1s;
+}
+#submit:hover{
+    background-color: brown;
+    /* transform: ; */
+}
+.contact-form input{
+    height: 2rem;
+}
+.contact-form label{
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+#footer{
+    background-color: rgb(146, 120, 120);
+    width: 100%;
+    height: 4rem;
+}
+.footer-content ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50rem;
+    justify-content: center;
+    margin:0 auto;
+}
+.footer-content li{
+    list-style: none;
+}
+.footer-content img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem 0.3rem 0 0;
+}
+.footer-content a{
+    text-decoration: none;
+    padding: 0.7rem 0 0 0;
+}
+.footer-content a:hover{
+    background-color: rgba(250, 184, 3, 0.356);
 }
