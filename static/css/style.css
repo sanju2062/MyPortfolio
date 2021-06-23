@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 :root{
     font-size: 15px;
-}    
+    --font1:'Stint Ultra Condensed', cursive;
+    --font2:'Rubik', sans-serif;
+} 
+
 *{  
     margin: 0;
     padding: 0;
@@ -21,7 +25,6 @@ nav div{
 }
 .nav-left{
     margin: 1.3rem ;
-    font-size: 1.3rem;
 }
 .nav-right{
     display: flex;
@@ -39,6 +42,8 @@ nav div{
 nav a{
     text-decoration: none;
     color: black;
+    font-family: var(--font1);
+    font-size: 2rem;
 }
 nav a:hover{
     text-decoration: underline;
@@ -62,6 +67,7 @@ hr{
 }
 .home-text{    
     font-size: 2.5rem;
+    font-family: var(--font2);
     /* margin: auto auto; */
     /* max-width: 20rem; */
 }
@@ -111,8 +117,9 @@ hr{
 .labels{
     font-size: 2rem;
     text-align: center;
-    color: rgba(189, 22, 240, 0.815);
+    color: rgba(6, 3, 7, 0.815);
     margin: auto auto;
+    font-family: var(--font2);
 }
 .sections{
     margin: 3rem auto;
@@ -141,9 +148,11 @@ hr{
 }
 .skills-content-label{
     margin: 4rem 0 2rem 0;
-    color: red;
+    color: #005affb3;
     text-decoration: underline;
     text-decoration-color: violet;
+    font-family: var(--font2);
+    font-size: 0.8rem;
 }
 .items{
     list-style: none;
@@ -208,4 +217,50 @@ hr{
 }
 .footer-content a:hover{
     background-color: rgba(250, 184, 3, 0.356);
+}
+
+@media screen and (max-width:560px){
+    .nav-left{
+        margin: 1.3rem auto;
+    }
+    #nav-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-left-elements{
+        margin: 1rem 0.3rem;
+    }
+    .home-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-sub-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills-content{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: auto;
+        margin-top: 0;
+    }
+    .nav-left a{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+.label-hr{
+    width: 10rem;
+    margin: auto;
+    height: 0.3rem;
+    border: 2px solid red;
+    border-radius: 10rem;
+    background-color: #ff0000b0;
 }
