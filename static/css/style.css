@@ -136,6 +136,7 @@ hr{
 #about-text{
     max-width: 25rem;
     display: flex;
+    font-size: 1.3rem;
     justify-content: center;
     flex-direction: column;
 }
@@ -242,6 +243,7 @@ hr{
     #about-content{
         flex-direction: column;
         justify-content: center;
+        height: auto;
     }
     .skills-content{
         flex-direction: column;
