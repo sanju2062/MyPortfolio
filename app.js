@@ -20,9 +20,6 @@ app.post('/',(req,res)=>{
     desc = req.body.desc
     let contact_details = `\n${name}  ${contact_no}  ${email}  ${desc}`
     fs.appendFileSync('views/contact.txt',contact_details)
-    let submit_message = `Thanks for contact us ${name}`
-    let alert = require('alert');  
-alert(submit_message)
     // alert(submit_message);
     res.status(200).render('index');
 })
