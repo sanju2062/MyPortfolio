@@ -4,7 +4,7 @@
   "description": "This is portfolio of sanju",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon app.js"
   },
   "author": "Sanju Kumar",
   "license": "ISC",
@@ -12,7 +12,11 @@
     "alert": "^5.0.10",
     "connect-flash": "^0.1.1",
     "express": "^4.17.1",
+    "mongoose": "^5.12.14",
     "popups": "^1.1.3",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

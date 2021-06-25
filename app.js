@@ -1,29 +1,50 @@
 const express = require("express")
+const connectDB = require("./DB/Connection")
 const app = express();
 const port = process.env.PORT||5000;
 const path = require("path")
 const fs = require("fs")
 
-app.use('/static',express.static('static'))
-app.use(express.urlencoded({ extended: true }))
+const mongoose = require('mongoose');
 
+
+connectDB();
+
+app.use(express.json({extended:false}));
+// app.use('/api/contactModel',require('./Api/Contact'));
+app.use('/static',express.static('static')) 
+app.use(express.urlencoded({ extended: true })) 
+ 
 app.set('view engine','pug')
 app.set('views',path.join(__dirname,'views'))
 
 app.get('/',(req,res)=>{
-    res.status(200).render('index')
+    res.status(200).render('index') 
 });
-app.post('/',(req,res)=>{
-    name =  req.body.name;
-    contact_no = req.body.contact_no
-    email = req.body.email
-    desc = req.body.desc
-    let contact_details = `\n${name}  ${contact_no}  ${email}  ${desc}`
-    fs.appendFileSync('views/contact.txt',contact_details)
-    // alert(submit_message);
-    res.status(200).render('index');
-})
+
+const contact ={
+    Name:String,
+    Contact_no:Number,
+    Email:String,
+    Description:String
+};
+
+const Contact = mongoose.model('Contacts',contact);
+
+
+
+//temp code
+app.post('/',function(req,res){
+    let newName = new Contact({
+    Name:req.body.name,
+    Contact_no:req.body.contact_no,
+    Email:req.body.email,
+    Description:req.body.desc})
+
+    newName.save();
+    res.redirect('/');
+});
 
 app.listen(port,()=>{
-    console.log("Application is running at https://127.0.0.1")
+    console.log("Application is running at https://127.0.0.1:5000")
 })
