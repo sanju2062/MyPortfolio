@@ -7,7 +7,8 @@
     <title>Sanju's Portfolio</title>
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+    link(rel="shortcut icon", href="../static/images/7.png", type="image/x-icon")
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap"rel="stylesheet">
 </head>
 <body>
     <nav id='nav-bar'class="max-width">
@@ -23,17 +24,17 @@
     </nav>
     <hr>
     <div class="home-content max-width">
-        <div class="home-text"><p ALIGN=CENTER>Hi,</p><p ALIGN=CENTER>I'm a <b style="color:blue;">Sanju</b></p><p ALIGN=CENTER>A web developer.</p></div>
-        <div><img src="../static/images/3.png" alt="Sanju"></div>
+        <div class="home-text"><p id="home_para" ALIGN=CENTER>Hi,<br/>I'm a <b style="color:blue;">Sanju</b><br/>A web developer.</p></div>
+        <div><img src="../static/images/8.jpg" alt="Sanju"></div>
     </div>
     <div class="home-sub-content max-width">
         <ul class="social-links">
-            <li><a href="https://facebook.com" target="_blank"><img src="../static/images/fb.png" alt=""></a></li>
-            <li><a href="https://www.whatsapp.com" target="_blank"><img src="../static/images/whatsapp.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><img src="../static/images/insta.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100067543698609" target="_blank"><img src="../static/images/fb.png" alt=""></a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=918753000021?Hi,Sanju" target="_blank"><img src="../static/images/whatsapp.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/sa.njukumar" target="_blank"><img src="../static/images/insta.png" alt=""></a></li>
             <li><a href="https://github.com/sanju2062" target="_blank"><img src="../static/images/github.png" alt=""></a></li>
         </ul>
-        <img src="../static/images/hi.gif" alt="Hi" width="250" alt="404 image" id="hi-gif"/>
+        <img src="../static/images/hi2.gif" alt="Hi" width="250" alt="404 image" id="hi-gif"/>
     </div>
     <hr>
     <section id="about" class="max-width sections">
@@ -41,7 +42,7 @@
         <hr class="label-hr">
         <div id="about-content" class="sections max-width">
             <div id="about-img">
-                <img src="../static/images/4.png" alt="sanju">
+                <img src="../static/images/5.png" alt="sanju">
             </div>
             <div id="about-text">
                 <p ALIGN=CENTER>Hi,I'm sanju.I'm a student of B.Tech CSE.<br>I'm working as a web developer</p>
@@ -94,14 +95,19 @@
     <footer id="footer">
         <div class="footer-content">
             <ul>
-                <li class="footer-items"><a href="https://facebook.com" target="_blank"><img src="../static/images/fb.png" alt=""></a></li>
-                <li class="footer-items"><a href="https://www.whatsapp.com" target="_blank"><img src="../static/images/whatsapp.png" alt=""></a></li>
-                <li class="footer-items"><a href="https://www.instagram.com" target="_blank"><img src="../static/images/insta.png" alt=""></a></li>
+                <li class="footer-items"><a href="https://www.facebook.com/profile.php?id=100067543698609" target="_blank"><img src="../static/images/fb.png" alt=""></a></li>
+                <li class="footer-items"><a href="https://api.whatsapp.com/send?phone=918753000021?Hi,Sanju" target="_blank"><img src="../static/images/whatsapp.png" alt=""></a></li>
+                <li class="footer-items"><a href="https://www.instagram.com/sa.njukumar" target="_blank"><img src="../static/images/insta.png" alt=""></a></li>
                 <li class="footer-items"><a href="https://github.com/sanju2062" target="_blank"><img src="../static/images/github.png" alt=""></a></li>
-                <li class="footer-items"><a href="https://github.com/sanju2062" target="_blank"><img src="../static/images/ln.png" alt=""></li>
+                <li class="footer-items"><a href="https://www.linkedin.com/in/sanju-kumar-2836561b4/" target="_blank"><img src="../static/images/ln.png" alt=""></li>
             </ul>
         </div>
     </footer>
 </body>
 script(src="../static/js/script.js") 
+script(src="../static/js/scroll-out.js")
+script(type="text/javascript") 
+    | ScrollOut({
+    |   targets:'p,nav a,nav li,.labels,.coding-skills li,.hobies li,.skills-content-label'
+    |})
 </html>

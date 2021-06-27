@@ -11,7 +11,6 @@ const mongoose = require('mongoose');
 connectDB();
 
 app.use(express.json({extended:false}));
-// app.use('/api/contactModel',require('./Api/Contact'));
 app.use('/static',express.static('static')) 
 app.use(express.urlencoded({ extended: true })) 
  
@@ -40,7 +39,6 @@ app.post('/',function(req,res){
     Contact_no:req.body.contact_no,
     Email:req.body.email,
     Description:req.body.desc})
-
     newName.save();
     res.redirect('/');
 });
