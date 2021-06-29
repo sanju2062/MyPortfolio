@@ -40,9 +40,8 @@ app.post('/',function(req,res){
     Email:req.body.email,
     Description:req.body.desc})
     newName.save();
-    res.redirect('/');
 });
 
 app.listen(port,()=>{
-    console.log("Application is running at https://127.0.0.1:5000")
+    console.log("Application is running at http://127.0.0.1:5000")
 })

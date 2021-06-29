@@ -53,24 +53,32 @@
     <section id="skills" class="max-width sections">
         <div id="skills-label" class="labels">Skills</div>
         <hr class="label-hr">
-        <div class="skills-content max-width sections">
-            <div class="coding-skills">
-                <ul>
-                    <li class="coding-skills-items items skills-content-label">Coding Skills</li>
-                    <li ALIGN=CENTER class="coding-skills-items items">C++</li>
-                    <li ALIGN=CENTER class="coding-skills-items items">Java</li>
-                    <li ALIGN=CENTER class="coding-skills-items items">Python</li>
-                    <li ALIGN=CENTER class="coding-skills-items items">Html</li>
-                    <li ALIGN=CENTER class="coding-skills-items items">Javascript</li>
-                    <li ALIGN=CENTER class="coding-skills-items items">Css</li>
-                </ul>
-            </div>
-            <div class="hobies">
-                <ul>
-                    <li ALIGN=CENTER class="hobies-items items skills-content-label">Hobbies</li>
-                    <li ALIGN=CENTER class="hobies-items items">Reading books</li>
-                    <li ALIGN=CENTER class="hobies-items items">Travel</li>
-                </ul>
+        <div id="skills-slides">
+            <div class="skills-content max-width sections">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <div class="slide first">
+                        <img src="../static/images/skill1.png" class="skill">
+                    </div>
+                    <div class="slide second">
+                        <img src="../static/images/skill2.png" class="skill">
+                    </div>
+                    <div class="slide third">
+                        <img src="../static/images/skill3.png" class="skill">
+                    </div>
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
             </div>
         </div>
     </section>
@@ -78,7 +86,7 @@
     <section id="contact" class="sections max-width">
         <div id="contact-label" class="labels">Contact</div>
         <hr class="label-hr">
-        <div class="contact-form sections max-width">
+        <div id="contact-form" class="contact-form sections max-width">
             <form action="/"method="POST">
                 <label for="name" class="contact-details-label">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
@@ -88,8 +96,11 @@
                 <input type="email" name="email" id="email" placeholder="Enter your email">
                 <label for="desc" class="contact-details-label">Description:</label>
                 <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter about yourself"></textarea>
-                <input type="submit" name="submit" id="submit">
+                <input type="submit" name="submit" id="submit" onclick="thankyou()">
             </form>
+        </div>
+        <div id='thankyoumessage' class='thanks_message'>
+            p Thank You for contact me.I will contact back with you soon.
         </div>
     </section>
     <footer id="footer">
