@@ -265,7 +265,7 @@ input,textarea{
 input:hover,textarea:hover{
     transform: scale(1.05);
     border: 1.3px solid black;
-    box-shadow: 2px 2px 2px 2px #000000;
+    box-shadow: 1px 1px 1px 1px #000000;
 }
 #thankyoumessage{
     display: none;
