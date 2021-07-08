@@ -5,6 +5,7 @@ html{
 :root{
     --font1:'Stint Ultra Condensed', cursive;
     --font2:'Rubik', sans-serif;
+    --lightgreen-color:rgba(64, 219, 134, 0.959);
     font-size: 15px;
 } 
 
@@ -313,7 +314,7 @@ input:hover,textarea:hover{
     justify-content: center;
 }
 .manual-btn{
-    border: 2px solid rgba(0, 46, 253, 0.082);
+    border: 2px solid var(--lightgreen-color);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -323,7 +324,7 @@ input:hover,textarea:hover{
     margin-right: 40px;
 }
 .manual-btn:hover{
-    background-color: rgba(0, 46, 253, 0.082);
+    background-color: var(--lightgreen-color);
 }
 #radio1:checked~.first{
     margin-left: 0;
@@ -349,7 +350,7 @@ input:hover,textarea:hover{
     
 }
 .navigation-auto div{
-    border: 2px solid rgba(0, 46, 253, 0.082);
+    border: 2px solid var(--lightgreen-color);
     padding: 5px;
     border-radius: 10px;
 }
@@ -358,16 +359,16 @@ input:hover,textarea:hover{
     margin-right: 40px;
 }
 #radio1:checked~.navigation-auto .auto-btn1{
-    background-color: rgba(0, 46, 253, 0.082);
+    background-color: var(--lightgreen-color);
 }
 #radio2:checked~.navigation-auto .auto-btn2{
-    background-color: rgba(0, 46, 253, 0.082);
+    background-color: var(--lightgreen-color);
 }
 #radio3:checked~.navigation-auto .auto-btn3{
-    background-color: rgba(0, 46, 253, 0.082);
+    background-color: var(--lightgreen-color);
 }
 #radio4:checked~.navigation-auto .auto-btn4{
-    background-color: rgba(0, 46, 253, 0.082);
+    background-color: var(--lightgreen-color);
 }
 
 @media screen and (max-width:610px){
