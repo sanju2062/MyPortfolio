@@ -3,9 +3,9 @@ const connectDB = require("./DB/Connection")
 const app = express();
 const port = process.env.PORT||5000;
 const path = require("path")
-const fs = require("fs")
 
 const mongoose = require('mongoose');
+const { Console } = require("console");
 
 
 connectDB();
@@ -32,7 +32,6 @@ const Contact = mongoose.model('Contacts',contact);
 
 
 
-//temp code
 app.post('/',function(req,res){
     let newName = new Contact({
     Name:req.body.name,
